@@ -1,0 +1,10 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+PROJECT(TestCSC CSC)
+
+SET(CMAKE_VERBOSE_MAKEFILE 1)
+
+# Test an assembly (Math) linked against a executable (TestMath)
+ADD_SUBDIRECTORY(Math)
+ADD_SUBDIRECTORY(TestMath)
+
+ADD_SUBDIRECTORY(Helloworld)
