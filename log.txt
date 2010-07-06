@@ -1,0 +1,146 @@
+
+c:\Users\Ian\devel\CMake\Tests\CSC>if not exist vc\. mkdir vc 
+
+c:\Users\Ian\devel\CMake\Tests\CSC>pushd vc 
+
+c:\Users\Ian\devel\CMake\Tests\CSC\vc>..\..\..\vc9\bin\Debug\cmake.exe -G"Visual Studio 9 2008" ..\ --debug-trycompile --debug-output 
+debug trycompile on
+Running with debug output on.
+-- Build C# adapter
+   Called from: [2]	C:/Users/Ian/devel/CMake/Modules/CMakeDetermineCSCCompiler.cmake
+                [1]	C:/Users/Ian/devel/CMake/Tests/CSC/CMakeLists.txt
+-- Build C# adapter: C:/Users/Ian/devel/CMake/Tests/CSC/vc/CMakeFiles/csc_adapt.exe
+   Called from: [2]	C:/Users/Ian/devel/CMake/Modules/CMakeDetermineCSCCompiler.cmake
+                [1]	C:/Users/Ian/devel/CMake/Tests/CSC/CMakeLists.txt
+-- Check for working CSC compiler using: Visual Studio 9 2008
+   Called from: [2]	C:/Users/Ian/devel/CMake/Modules/CMakeTestCSCCompiler.cmake
+                [1]	C:/Users/Ian/devel/CMake/Tests/CSC/CMakeLists.txt
+-- Check for working CSC compiler using: Visual Studio 9 2008 -- broken
+   Called from: [2]	C:/Users/Ian/devel/CMake/Modules/CMakeTestCSCCompiler.cmake
+                [1]	C:/Users/Ian/devel/CMake/Tests/CSC/CMakeLists.txt
+CMake Error at C:/Users/Ian/devel/CMake/Modules/CMakeTestCSCCompiler.cmake:21 (MESSAGE):
+  The CSC compiler
+  "C:/Users/Ian/devel/CMake/Tests/CSC/vc/CMakeFiles/csc_adapt.exe" is not
+  able to compile a simple test program.
+
+  It fails with the following output:
+
+   Change Dir: C:/Users/Ian/devel/CMake/Tests/CSC/vc/CMakeFiles/CMakeTmp
+
+  
+
+  Run Build Command:C:\PROGRA~2\MICROS~1.0\Common7\IDE\VCExpress.exe
+  CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec
+
+  
+
+  Microsoft (R) Visual C++ Express Edition Version 9.0.30729.1.
+
+  Copyright (C) Microsoft Corp 2007.  All rights reserved.
+
+  
+
+  Project file
+  'C:\Users\Ian\devel\CMake\Tests\CSC\vc\CMakeFiles\CMakeTmp\cmTryCompileExec.vcproj'
+  could not be loaded.
+
+  The project is either missing from disk or access was denied.
+
+  One or more projects in the solution could not be loaded for the following
+  reason(s):
+
+  
+
+  The project file or web has been moved, renamed or is not on your computer.
+
+  
+
+  These projects will be labeled as unavailable in Solution Explorer.  Expand
+  the project node to show the reason the project could not be loaded.
+
+  Invalid project
+
+  
+
+  Use:
+
+  vcexpress [solutionfile | projectfile | anyfile.ext] [switches]
+
+  
+
+  The first argument for devenv is usually a solution file or project file.
+
+  You can also use any other file as the first argument if you want to have
+  the
+
+  file open automatically in an editor.  When you enter a project file, the
+  IDE
+
+  looks for an .sln file with the same base name as the project file in the
+
+  parent directory for the project file.  If no such .sln file exists, then
+  the
+
+  IDE looks for a single .sln file that references the project.  If no such
+  single
+
+  .sln file exists, then the IDE creates an unsaved solution with a default
+  .sln
+
+  file name that has the same base name as the project file.
+
+  
+
+  Command line builds:
+
+  devenv solutionfile.sln /build [ solutionconfig ] [ /project
+  projectnameorfile [ /projectconfig name ] ]
+
+  Available command line switches:
+
+  
+
+  /Log		Logs IDE activity to the specified file for troubleshooting.
+
+  /ResetSettings	Restores the IDE's default settings, optionally resets to
+
+  		the specified VSSettings file.
+
+  /SafeMode	Launches the IDE in safe mode loading minimal windows.
+
+  
+
+  Product-specific switches:
+
+  
+
+  /debugexe	Open the specified executable to be debugged.  The
+
+  		remainder of the command line is passed to this
+
+  		executable as its arguments.
+
+  /useenv		Use PATH, INCLUDE, LIBPATH, and LIB environment variables
+
+  		instead of IDE paths for VC++ builds.
+
+  
+
+  To attach the debugger from the command line, use:
+
+  	VsJITDebugger.exe -p <pid>
+
+  
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (PROJECT)
+
+
+   Called from: [2]	C:/Users/Ian/devel/CMake/Modules/CMakeTestCSCCompiler.cmake
+                [1]	C:/Users/Ian/devel/CMake/Tests/CSC/CMakeLists.txt
+-- Configuring incomplete, errors occurred!
+
+c:\Users\Ian\devel\CMake\Tests\CSC\vc>popd
