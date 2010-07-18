@@ -1,4 +1,5 @@
-if not exist nmake\. mkdir nmake
+rd /s /q nmake
+mkdir nmake
 pushd nmake
-..\..\..\vc9\bin\Debug\cmake.exe -G"NMake Makefiles" ..\ %*
+..\..\CMake.dev\bin\Debug\cmake.exe -G"NMake Makefiles" ..\ %*
 popd
