@@ -1,2 +1,2 @@
 ADD_EXECUTABLE(TestMath TestMath.cs)
-TARGET_LINK_LIBRARIES(TestMath Math)
+TARGET_LINK_LIBRARIES(TestMath libMath)

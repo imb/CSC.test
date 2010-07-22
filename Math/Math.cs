@@ -1,3 +1,3 @@
-class Math {
-    static int add(int a, int b) { return a+b; }
+public class Math {
+    public static int Add(int a, int b) { return a+b; }
 }

@@ -1,1 +1,1 @@
-ADD_LIBRARY(Math SHARED Math.cs)
+ADD_LIBRARY(libMath SHARED Math.cs)
